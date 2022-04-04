@@ -6,7 +6,7 @@
 
 body {
   /* padding: 50px; */
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Graphik", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -72,6 +72,9 @@ a {
 }
 
 /* 紹介ページ */
+.p1-container{
+  background-color:#E5E5E5;
+}
 .p1-item{
   display:flex;
   flex-flow:column;
@@ -88,8 +91,32 @@ a {
 .p1-item:nth-of-type(2){
   background-color: #ED145B;
   color:white;
+  animation: SlideIn 1.6s;
 }
-.p1-bottom-head-text{
+@keyframes SlideIn {
+ 0% {
+  opacity: 0;
+  transform: translateY(50%);
+ }
+ 100% {
+  opacity: 1;
+  transform: translateY(0);
+ }
+}
+.p1-top-text{
+  padding-top: 1em;
+  font-size: 2em;
+}
+
+.p1-top-container{
+  width: 100%;
+  display: flex;
+  flex-flow:row;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.p1-bottom-text{
   font-size: 5em;
   font-weight: bold;
   line-height: 1em;
