@@ -13,34 +13,36 @@ a {
   color: #00B7FF;
 }
 
-.f-container{
+.top-container{
   display:flex;
   flex-flow:column;
   height: max-content;
   /* row-gap: 10px; */
 }
-.f-item{
+.top-item{
   display:flex;
   justify-content: left;
   align-items: center;
   padding-left: 5em;
-  /* background-color: aquamarine; */
   width: 100%;
   height: 30vh;
 }
-.f-item:nth-of-type(1){
+.top-item:nth-of-type(1){
   background-color: #F0EDED;
 }
-.f-item:nth-of-type(2){
+.top-item:nth-of-type(2){
   background-color: #0000D5;
 }
-.f-item:nth-of-type(3){
+.top-item:nth-of-type(3){
   background-color: #000000;
 }
-.f-item:nth-of-type(4){
+.top-item:nth-of-type(4){
   background-color: #C4C4C4;
 }
-.f-item:nth-of-type(5){
+.top-item:nth-of-type(5){
+  flex-flow:column;
+  justify-content: center;
+  align-items:flex-start;
   background-color: #7500C0;
   color:white;
 }
@@ -50,5 +52,35 @@ a {
 .logo-font{
   font-size: 5em;
   line-height: 1em;
+}
+
+/* 紹介ページ */
+.intro-item{
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items:flex-start;
+  padding-left: 5em;
+  width: 100%;
+  height: 50vh;
+  background-color: #00B7FF;
+}
+.intro-item:nth-of-type(1){
+  background-color: #E5E5E5;
+}
+.intro-item:nth-of-type(2){
+  background-color: #ED145B;
+  color:white;
+}
+.top-item:nth-of-type(1){
+  font-size: 2em;
+}
+.p1-bottom-head-text{
+  font-size: 5em;
+  font-weight: bold;
+  line-height: 1em;
+}
+.p1-launch-date{
+  font-weight: bold;
 }
 
