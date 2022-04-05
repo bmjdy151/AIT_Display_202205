@@ -71,7 +71,7 @@ a {
   line-height: 1em;
 }
 
-/* 紹介ページ */
+/* P1_イントロ */
 .p1-container{
   background-color:#E5E5E5;
 }
@@ -83,7 +83,6 @@ a {
   padding-left: 5em;
   width: 100%;
   height: 50vh;
-  background-color: #00B7FF;
 }
 .p1-item:nth-of-type(1){
   background-color: #E5E5E5;
@@ -91,12 +90,12 @@ a {
 .p1-item:nth-of-type(2){
   background-color: #ED145B;
   color:white;
-  animation: SlideIn 1.6s;
+  animation: SlideIn 3s;
 }
 @keyframes SlideIn {
  0% {
   opacity: 0;
-  transform: translateY(50%);
+  transform: translateY(100%);
  }
  100% {
   opacity: 1;
@@ -125,3 +124,22 @@ a {
   font-weight: bold;
 }
 
+/* P2_事例 */
+
+.p2-item{
+  display:flex;
+  display: flex;
+  flex-flow:row;
+  align-items:center;
+  /* flex-flow:column;
+  justify-content: center;
+  align-items:flex-start; */
+  width: 100%;
+  height: 33vh;
+  background-color: #C4C4C4;
+}
+
+.p2-top-item:nth-of-type(1){
+  display: flex;
+  flex-flow:column;
+}
