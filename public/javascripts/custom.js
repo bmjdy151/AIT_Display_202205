@@ -2,7 +2,18 @@ var elInner, duration;
 var p1 = document.getElementsByClassName('p1-container');
 var p2 = document.getElementsByClassName('p2-container');
 var p4 = document.getElementsByClassName('p4-container');
-duration = 10;
+var duration = 30;
+
+function shuffleContent(container) {
+    var content = container.find("> *");
+    var total = content.length;
+    content.each(function() {
+      content.eq(Math.floor(Math.random() * total)).prependTo(container);
+    });
+  }
+  $(function() {
+    shuffleContent($("#menu"));
+  });
     
 if(p1.length) {
     setTimeout(function () {
