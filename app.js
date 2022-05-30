@@ -9,7 +9,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var fjord_1Router = require('./routes/fjord_1');
 var fjord_2Router = require('./routes/fjord_2');
+var fjord_3Router = require('./routes/fjord_3');
 var fjord_4Router = require('./routes/fjord_4');
+var testRouter = require('./routes/test');
 
 var app = express();
 
@@ -29,7 +31,9 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/fjord_1', fjord_1Router);
 app.use('/fjord_2', fjord_2Router);
+app.use('/fjord_3', fjord_3Router);
 app.use('/fjord_4', fjord_4Router);
+app.use('/test', testRouter);
 app.use(express.static(path.join(__dirname, "node_modules/bootstrap/dist/")));
 // app.use('/css', express.static(path.join(_dirname, 'node_modules/bootstrap/dist/css')))
 // app.use('/js', express.static(path.join(_dirname, 'node_modules/bootstrap/dist/js')))

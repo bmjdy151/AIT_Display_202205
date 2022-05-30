@@ -12,7 +12,7 @@ function shuffleContent(container) {
     });
   }
   $(function() {
-    shuffleContent($("#menu"));
+    shuffleContent($(".top-container"));
   });
     
 if(p1.length) {
